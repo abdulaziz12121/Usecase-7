@@ -29,4 +29,4 @@ if st.button("Predict DBSCAN"):
         result = response.json()
         st.success(f"The predicted DBSCAN  is: {result['dbscan_pred']}")
     else:
-        st.success(f"The predicted DBSCAN  is: {-1}")
+        st.error("Failed to get a DBSCAN prediction. Please try again.")
