@@ -8,10 +8,13 @@ url_dbscan = "https://usecase-7-12ia.onrender.com/predict_dbscan"  # Update with
 st.title("Player Value and Performance DBSCAN")
 
 # Input fields for the user to provide data
-yellow = st.number_input("yellow (in thousands)", min_value=0.0, max_value=1, value=0.1)
-red = st.number_input("red", min_value=0, max_value=1, value=0.1)
-position_encoded = st.number_input("position_encoded", min_value=0, max_value=4, value=0)
+yellow = st.number_input("yellow", min_value=0.0, max_value=1.0, value=0.1)
+yellow_folat = st.number_input("yellow folat", value=0.0)
 
+red = st.number_input("red", min_value=0, max_value=1.0, value=0.1)
+red_folat = st.number_input("red folat", value=0.0)
+
+position_encoded = st.number_input("position_encoded", min_value=0, max_value=4, value=0, step=1)
 # Prepare the data to be sent as JSON
 data = {
     "yellow": yellow,
