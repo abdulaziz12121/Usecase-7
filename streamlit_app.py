@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Set the URL for the FastAPI app
-url_dbscan = "https://fastapi3-tpoc.onrender.com/predict_dbscan"  # Update with your actual endpoint
+url_dbscan = "https://fastapi3-tpoc.onrender.com//predict_dbscan"  # Update with your actual endpoint
 
 # Create the Streamlit app
 st.title("Player Value and Performance DBSCAN")
