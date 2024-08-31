@@ -9,7 +9,8 @@ st.title("Player Value and Performance DBSCAN")
 
 # Input fields for the user to provide data
 yellow = st.number_input("yellow", min_value=0.0, max_value=1.0, value=0.1)
-red = st.number_input("red", min_value=0, max_value=1.0, value=0.1)
+
+red = st.number_input("red", min_value=0.0, max_value=1.0, value=0.1)
 
 position_encoded = st.number_input("position_encoded", min_value=0, max_value=4, value=0, step=1)
 data = {
